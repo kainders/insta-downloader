@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>인스타그램 영상 다운로드</title>
+  <!-- Tailwind CSS 불러오기 -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+
+  <!-- 상단 메뉴바 -->
+  <nav class="w-full bg-white shadow p-4 flex justify-between items-center">
+    <div class="text-xl font-bold text-gray-700">Insta Downloader</div>
+    <div class="flex space-x-6">
+      <a href="/about" class="text-blue-600 hover:underline">About</a>
+      <a href="/privacy" class="text-blue-600 hover:underline">Privacy Policy</a>
+    </div>
+  </nav>
+
+  <!-- 본문 영역 -->
+  <main class="flex-grow flex flex-col items-center justify-center px-4">
+    <header class="flex flex-col items-center mt-12">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" alt="로고" class="w-20 mb-6">
+      <h1 class="text-4xl font-extrabold text-gray-800 mb-8 text-center">Insta Video Downloader</h1>
+    </header>
+
+    <form method="POST" action="/download" class="w-full max-w-md flex flex-col items-center space-y-4">
+      <input type="text" name="url" placeholder="인스타그램 URL 입력" class="w-full p-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-400">
+      <button type="submit" class="w-full p-3 bg-green-500 hover:bg-green-600 text-white font-bold rounded-lg">
+        다운로드
+      </button>
+    </form>
+  </main>
+
+  <!-- 하단 푸터 -->
+  <footer class="bg-white shadow p-4 text-center text-gray-500 text-sm">
+    © 2025 by kw. All rights reserved.
+  </footer>
+
+</body>
+</html>
